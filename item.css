@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.logoContainer img{
+  height: 50px;
+  width: 50px;
+}
+#item-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  max-width: 800px; /* Limit width for printability */
+  
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.grid-item {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9; /* Light background for visibility */
+}
+.header {
+  font-weight: bold;
+  background-color: #e0e0e0; /* Header background */
+}
+input[type="number"], input[type="text"] {
+  width: 100%; /* Set width for input fields */
+  text-align: center; /* Center the text in the input */
+  box-sizing: border-box; /* Include padding in width */
+}
+@media print {
+  body {
+      margin: 0;
+  }
+  #item-list {
+      border: none; /* Remove border for print */
+  }
+  input[type="number"], input[type="text"] {
+      border: none; /* Remove border from input fields when printing */
+      background: none; /* Remove background for printing */
+      width: auto; /* Allow auto-width */
+  }
+}

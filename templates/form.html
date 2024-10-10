@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printable Item List</title>
+</head>
+<body>
+<h1>Item Submission Form</h1>
+<form id="item-form" action="/submit" method="POST">
+    <div id="item-list">
+        <div class="grid-item header">ITEM NO.</div>
+        <div class="grid-item header">QTY</div>
+        <div class="grid-item header">SERIAL NUMBER</div>
+        <div class="grid-item header">EMPTY COLUMN</div>
+        <div class="grid-item header">DESCRIPTION</div>
+        <div class="grid-item header">REMARKS</div>
+    </div>
+
+    <div id="item-data"></div>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    const selectedItems = JSON.parse(localStorage.getItem("selectedItems")) || [];
+    const itemData = document.getElementById("item-data");
+
+    selectedItems.forEach((item, index) => {
+        const row = document.createElement("div");
+
+        const itemNo = document.createElement("div");
+        itemNo.textContent = index + 1;
+        row.appendChild(itemNo);
+
+        const qtyItem = document.createElement("div");
+        const qtyInput = document.createElement("input");
+        qtyInput.type = "number";
+        qtyInput.name = `qty[${index}]`;
+        qtyInput.value = "1";
+        qtyInput.min = "1";
+        qtyItem.appendChild(qtyInput);
+        row.appendChild(qtyItem);
+
+        const serialItem = document.createElement("div");
+        const serialInput = document.createElement("input");
+        serialInput.type = "text";
+        serialInput.name = `serial[${index}]`;
+        serialItem.appendChild(serialInput);
+        row.appendChild(serialItem);
+
+        const emptyColumn = document.createElement("div");
+        const emptyInput = document.createElement("input");
+        emptyInput.type = "text";
+        emptyInput.name = `empty[${index}]`;
+        emptyColumn.appendChild(emptyInput);
+        row.appendChild(emptyColumn);
+
+        const itemName = document.createElement("div");
+        itemName.textContent = item;
+        row.appendChild(itemName);
+
+        const remarksItem = document.createElement("div");
+        const remarksInput = document.createElement("input");
+        remarksInput.type = "text";
+        remarksInput.name = `remarks[${index}]`;
+        remarksItem.appendChild(remarksInput);
+        row.appendChild(remarksItem);
+
+        itemData.appendChild(row);
+    });
+</script>
+</body>
+</html>

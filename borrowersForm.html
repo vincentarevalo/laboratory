@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./borrowersForm.css" />
+    <link rel="icon" href="./programLogo.png" type="image/x-icon" />
+
+    <title>UCC Laboratory</title>
+  </head>
+  <body>
+    <div class="faq-popup" id="faqPopup">
+      <div class="faq-header">
+        <h2>Frequently Asked Questions</h2>
+        <button class="close-btn" onclick="togglePopup()">×</button>
+      </div>
+      <div class="faq-content">
+        <div class="faq-item">
+          <h3 class="faq-question" onclick="toggleAnswer(this)">
+            What is your return policy?
+          </h3>
+          <p class="faq-answer">
+            You can return any item within 30 days of purchase.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question" onclick="toggleAnswer(this)">
+            How can I track my order?
+          </h3>
+          <p class="faq-answer">
+            You can track your order using the tracking link sent to your email.
+          </p>
+        </div>
+      </div>
+      <div class="logo-container">
+        <img src="logo.png" alt="Company Logo" class="logo" />
+      </div>
+    </div>
+    <div class="open-popup" onclick="togglePopup()">
+      <img src="./customerService.png" alt="" />
+    </div>
+    <div class="header">
+      <div class="headerColor1">
+        <div class="headerLogo">
+          <img src="./header.png" alt="" />
+        </div>
+      </div>
+      <div class="headerColor2">
+        <div class="logo">
+          <a href="../Homepage/homepage.html">
+            <img
+              class="engineeringLogo"
+              src="./programLogo.png"
+              alt=""
+              height="90px"
+              width="90px"
+          /></a>
+        </div>
+        <div class="navigationBar">
+          <a href="../AboutUs/AboutUs.html"
+            ><div class="nav aboutUs">About Us</div></a
+          >
+          <a href="../What we offer/WhatWeOffer.html"
+            ><div class="nav whatWeOffer">What we offer</div>
+          </a>
+          <a href="../FacultyAndStaff/FacultyAndStaff.html">
+            <div class="nav facultyStaff">Faculty and Staff</div>
+          </a>
+          <a href="../Laboratories/Laboratories.html">
+            <div class="nav laboratories">Laboratories</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="splitContainer">
+      <div class="borrowContainer">
+        <br />
+        <input type="text" id="search-input" placeholder="Search items..." />
+        <h1>Borrow Item/s</h1>
+        <form id="item-selection-form">
+          <div class="submit">
+            <button type="submit">Show Selected Items</button>
+          </div>
+          <div class="firstSection">
+            <label
+              ><input type="checkbox" value="2m PATCH CORD SET" /> 2m PATCH CORD
+              SET</label
+            >
+            <label
+              ><input type="checkbox" value="2m PATCH CORD SET" /> 2m PATCH CORD
+              SET</label
+            >
+            <label
+              ><input type="checkbox" value="2m PATCH CORD SET" /> 2m PATCH CORD
+              SET</label
+            >
+            <label
+              ><input type="checkbox" value="2m PATCH CORD SET" /> 2m PATCH CORD
+              SET</label
+            >
+            <label
+              ><input type="checkbox" value="32-BIT MICROPROCESSOR BOARD" />
+              32-BIT MICROPROCESSOR BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="3IN1 SCREW DRIVER SET" /> 3IN1
+              SCREW DRIVER SET</label
+            >
+            <label
+              ><input type="checkbox" value="3IN1 SCREW DRIVER SET" /> 3IN1
+              SCREW DRIVER SET</label
+            >
+            <label
+              ><input type="checkbox" value="3IN1 SCREW DRIVER SET" /> 3IN1
+              SCREW DRIVER SET</label
+            >
+            <label
+              ><input type="checkbox" value="3IN1 SCREW DRIVER SET" /> 3IN1
+              SCREW DRIVER SET</label
+            >
+            <label
+              ><input type="checkbox" value="AC1 FUNDAMENTALS BOARD" /> AC1
+              FUNDAMENTALS BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="AC2 FUNDAMENTALS BOARD" /> AC2
+              FUNDAMENTALS BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="ACQUATIC PRODUCTIVITY BOTTLES" />
+              ACQUATIC PRODUCTIVITY BOTTLES</label
+            >
+            <label
+              ><input type="checkbox" value="ACQUATIC PRODUCTIVITY BOTTLES" />
+              ACQUATIC PRODUCTIVITY BOTTLES</label
+            >
+            <label
+              ><input type="checkbox" value="AI ROBOTICS KIT A" /> AI ROBOTICS
+              KIT A</label
+            >
+            <label
+              ><input type="checkbox" value="AI ROBOTICS KIT A" /> AI ROBOTICS
+              KIT A</label
+            >
+            <label
+              ><input type="checkbox" value="AI ROBOTICS KIT B" /> AI ROBOTICS
+              KIT B</label
+            >
+            <label
+              ><input type="checkbox" value="AI ROBOTICS KIT B" /> AI ROBOTICS
+              KIT B</label
+            >
+            <label
+              ><input type="checkbox" value="AMPLIFIER-06" />
+              AMPLIFIER-06</label
+            >
+            <label
+              ><input type="checkbox" value="ANALOG COMMUNICATIONS BOARD" />
+              ANALOG COMMUNICATIONS BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="ARTIFICIAL INTELLLIGENCE" />
+              ARTIFICIAL INTELLLIGENCE</label
+            >
+            <label
+              ><input type="checkbox" value="ARTIFICIAL INTELLLIGENCE" />
+              ARTIFICIAL INTELLLIGENCE</label
+            >
+            <label
+              ><input type="checkbox" value="ARTIFICIAL INTELLLIGENCE" />
+              ARTIFICIAL INTELLLIGENCE</label
+            >
+            <label
+              ><input type="checkbox" value="ARTIFICIAL INTELLLIGENCE" />
+              ARTIFICIAL INTELLLIGENCE</label
+            >
+            <label
+              ><input type="checkbox" value="ATTENUATOR 30 DB-06" /> ATTENUATOR
+              30 DB-06</label
+            >
+            <label
+              ><input type="checkbox" value="BASIC CALORIMETRY" /> BASIC
+              CALORIMETRY</label
+            >
+            <label
+              ><input type="checkbox" value="BASIC CALORIMETRY" /> BASIC
+              CALORIMETRY</label
+            >
+            <label
+              ><input type="checkbox" value="BASIC CALORIMETRY" /> BASIC
+              CALORIMETRY</label
+            >
+            <label
+              ><input type="checkbox" value="BASIC CALORIMETRY" /> BASIC
+              CALORIMETRY</label
+            >
+            <label
+              ><input type="checkbox" value="BASIC OPTICS SYSTEM" /> BASIC
+              OPTICS SYSTEM</label
+            >
+            <label
+              ><input type="checkbox" value="BASIC OPTICS SYSTEM" /> BASIC
+              OPTICS SYSTEM</label
+            >
+            <label
+              ><input type="checkbox" value="BREAD BOARD" /> BREAD BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="BREAD BOARD" /> BREAD BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="BREAD BOARD" /> BREAD BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="BREAD BOARD" /> BREAD BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="BREAD BOARD" /> BREAD BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="BREAD BOARD" /> BREAD BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="BREAD BOARD" /> BREAD BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="BREAD BOARD" /> BREAD BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="BREAD BOARD" /> BREAD BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="BREAD BOARD" /> BREAD BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label
+              ><input type="checkbox" value="BUNSEN BURNER" /> BUNSEN
+              BURNER</label
+            >
+            <label><input type="checkbox" value="CAMERA-01" /> CAMERA-01</label>
+            <label><input type="checkbox" value="CAMERA-02" /> CAMERA-02</label>
+            <label><input type="checkbox" value="CAMERA-03" /> CAMERA-03</label>
+            <label><input type="checkbox" value="CAMERA-04" /> CAMERA-04</label>
+            <label><input type="checkbox" value="CAMERA-05" /> CAMERA-05</label>
+            <label
+              ><input
+                type="checkbox"
+                value="CHARGE, EQUIPOTENTIAL&FIELD MAPPER"
+              />
+              CHARGE, EQUIPOTENTIAL&FIELD MAPPER</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="CHARGE, EQUIPOTENTIAL&FIELD MAPPER"
+              />
+              CHARGE, EQUIPOTENTIAL&FIELD MAPPER</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="COMMUNICATIONS TRANSMISSION LINES BOARD"
+              />
+              COMMUNICATIONS TRANSMISSION LINES BOARD</label
+            >
+            <label><input type="checkbox" value="CONDENSER" /> CONDENSER</label>
+            <label><input type="checkbox" value="CONDENSER" /> CONDENSER</label>
+            <label
+              ><input type="checkbox" value="CONDUCTIVE INK PEN" /> CONDUCTIVE
+              INK PEN</label
+            >
+            <label
+              ><input type="checkbox" value="CONDUCTIVE INK PEN" /> CONDUCTIVE
+              INK PEN</label
+            >
+            <label><input type="checkbox" value="CORD" /> CORD</label>
+            <label
+              ><input type="checkbox" value="DATA ACQUISITION INTERFACE" /> DATA
+              ACQUISITION INTERFACE</label
+            >
+            <label
+              ><input type="checkbox" value="DC FUNDAMENTALS BOARD" /> DC
+              FUNDAMENTALS BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="DC NETWORK THEOREMS BOARD" /> DC
+              NETWORK THEOREMS BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="DENSITY SET" /> DENSITY SET</label
+            >
+            <label
+              ><input type="checkbox" value="DENSITY SET" /> DENSITY SET</label
+            >
+            <label
+              ><input type="checkbox" value="DIGITAL CALIPER" /> DIGITAL
+              CALIPER</label
+            >
+            <label
+              ><input type="checkbox" value="DIGITAL CALIPER" /> DIGITAL
+              CALIPER</label
+            >
+            <label
+              ><input type="checkbox" value="DIGITAL CALIPER" /> DIGITAL
+              CALIPER</label
+            >
+            <label
+              ><input type="checkbox" value="DIGITAL CALIPER" /> DIGITAL
+              CALIPER</label
+            >
+            <label
+              ><input type="checkbox" value="DIGITAL COMMUNICATIONS 1 BOARD" />
+              DIGITAL COMMUNICATIONS 1 BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="DIGITAL COMMUNICATIONS 2 BOARD" />
+              DIGITAL COMMUNICATIONS 2 BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="DIGITAL LOGIC FUNDAMENTAL BOARD" />
+              DIGITAL LOGIC FUNDAMENTAL BOARD</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="DIGITAL LOGIC FUNDAMENTALS 2 BOARD"
+              />
+              DIGITAL LOGIC FUNDAMENTALS 2 BOARD</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="DIGITAL LOGIC FUNDMENTALS 1 BOARD"
+              />
+              DIGITAL LOGIC FUNDMENTALS 1 BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="DIGITAL MULTIMETER" /> DIGITAL
+              MULTIMETER</label
+            >
+            <label
+              ><input type="checkbox" value="DIGITAL MULTIMETER" /> DIGITAL
+              MULTIMETER</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="DIGITAL MULTIMETER/FUNCTION GENERATOR"
+              />
+              DIGITAL MULTIMETER/FUNCTION GENERATOR</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="DIGITAL MULTIMETER/FUNCTION GENERATOR"
+              />
+              DIGITAL MULTIMETER/FUNCTION GENERATOR</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="DIGITAL MULTIMETER/FUNCTION GENERATOR"
+              />
+              DIGITAL MULTIMETER/FUNCTION GENERATOR</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="DIGITAL MULTIMETER/FUNCTION GENERATOR"
+              />
+              DIGITAL MULTIMETER/FUNCTION GENERATOR</label
+            >
+            <label
+              ><input type="checkbox" value="DISCHARGE SPHERE" /> DISCHARGE
+              SPHERE</label
+            >
+            <label
+              ><input type="checkbox" value="DISCHARGE SPHERE" /> DISCHARGE
+              SPHERE</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="DUAL TRACE DIGITAL STORAGE OSCILLOSCOPE"
+              />
+              DUAL TRACE DIGITAL STORAGE OSCILLOSCOPE</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="DUAL TRACE DIGITAL STORAGE OSCILLOSCOPE"
+              />
+              DUAL TRACE DIGITAL STORAGE OSCILLOSCOPE</label
+            >
+            <label
+              ><input type="checkbox" value="ECO CHAMBER" /> ECO CHAMBER</label
+            >
+            <label
+              ><input type="checkbox" value="ECO CHAMBER" /> ECO CHAMBER</label
+            >
+            <label
+              ><input type="checkbox" value="ENERGY TRANSFER CALORIMETER" />
+              ENERGY TRANSFER CALORIMETER</label
+            >
+            <label
+              ><input type="checkbox" value="ENERGY TRANSFER CALORIMETER" />
+              ENERGY TRANSFER CALORIMETER</label
+            >
+            <label
+              ><input type="checkbox" value="ENERGY TRANSFER CALORIMETER" />
+              ENERGY TRANSFER CALORIMETER</label
+            >
+            <label
+              ><input type="checkbox" value="FET FUNDAMENTALS BOARD" /> FET
+              FUNDAMENTALS BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="FIBER OPTIC COMMUNICATION BOARD" />
+              FIBER OPTIC COMMUNICATION BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="FIRE EXTINGUISHER SMALL" /> FIRE
+              EXTINGUISHER SMALL</label
+            >
+            <label
+              ><input type="checkbox" value="FIRE EXTINGUISHER SMALL" /> FIRE
+              EXTINGUISHER SMALL</label
+            >
+            <label
+              ><input type="checkbox" value="FIRE EXTINGUISHER SMALL" /> FIRE
+              EXTINGUISHER SMALL</label
+            >
+            <label
+              ><input type="checkbox" value="FIRE EXTINGUISHER SMALL" /> FIRE
+              EXTINGUISHER SMALL</label
+            >
+            <label
+              ><input type="checkbox" value="FIRE EXTINGUISHER SMALL" /> FIRE
+              EXTINGUISHER SMALL</label
+            >
+            <label
+              ><input type="checkbox" value="FIRE EXTINGUISHER SMALL" /> FIRE
+              EXTINGUISHER SMALL</label
+            >
+            <label
+              ><input type="checkbox" value="FIRE EXTINGUISHER SMALL" /> FIRE
+              EXTINGUISHER SMALL</label
+            >
+            <label
+              ><input type="checkbox" value="FIRE EXTINGUISHER SMALL" /> FIRE
+              EXTINGUISHER SMALL</label
+            >
+            <label
+              ><input type="checkbox" value="FIRE EXTINGUISHER SMALL" /> FIRE
+              EXTINGUISHER SMALL</label
+            >
+            <label
+              ><input type="checkbox" value="FIRE EXTINGUISHER SMALL" /> FIRE
+              EXTINGUISHER SMALL</label
+            >
+            <label
+              ><input type="checkbox" value="GUNN OSCILLATOR POWER SUPPLY" />
+              GUNN OSCILLATOR POWER SUPPLY</label
+            >
+            <label
+              ><input type="checkbox" value="GUNN OSCILLATOR-06" /> GUNN
+              OSCILLATOR-06</label
+            >
+            <label
+              ><input type="checkbox" value="HEATER STIRRER" /> HEATER
+              STIRRER</label
+            >
+            <label
+              ><input type="checkbox" value="HEATER STIRRER" /> HEATER
+              STIRRER</label
+            >
+            <label
+              ><input type="checkbox" value="HORN ANTENNA-06" /> HORN
+              ANTENNA-06</label
+            >
+            <label
+              ><input type="checkbox" value="HORN ANTENNA-06" /> HORN
+              ANTENNA-06</label
+            >
+            <label
+              ><input type="checkbox" value="HOROLAGE SET" /> HOROLAGE
+              SET</label
+            >
+            <label
+              ><input type="checkbox" value="HOROLAGE SET" /> HOROLAGE
+              SET</label
+            >
+            <label
+              ><input type="checkbox" value="HOROLAGE SET" /> HOROLAGE
+              SET</label
+            >
+            <label
+              ><input type="checkbox" value="HOROLAGE SET" /> HOROLAGE
+              SET</label
+            >
+            <label
+              ><input type="checkbox" value="HYBRID TEE-06" /> HYBRID
+              TEE-06</label
+            >
+            <label
+              ><input type="checkbox" value="IRON FILLINGS" /> IRON
+              FILLINGS</label
+            >
+            <label
+              ><input type="checkbox" value="IRON FILLINGS" /> IRON
+              FILLINGS</label
+            >
+            <label
+              ><input type="checkbox" value="LEADS+ACCESSORI-06" />
+              LEADS+ACCESSORI-06</label
+            >
+            <label
+              ><input type="checkbox" value="LEGO ROBOTICS TECH SET W/BOOKS" />
+              LEGO ROBOTICS TECH SET W/BOOKS</label
+            >
+            <label
+              ><input type="checkbox" value="LEGO ROBOTICS TECH SET W/BOOKS" />
+              LEGO ROBOTICS TECH SET W/BOOKS</label
+            >
+            <label
+              ><input type="checkbox" value="LEGO ROBOTICS TECH SET W/BOOKS" />
+              LEGO ROBOTICS TECH SET W/BOOKS</label
+            >
+            <label
+              ><input type="checkbox" value="LEGO ROBOTICS TECH SET W/BOOKS" />
+              LEGO ROBOTICS TECH SET W/BOOKS</label
+            >
+            <label
+              ><input type="checkbox" value="LONG HEX KEYSET" /> LONG HEX
+              KEYSET</label
+            >
+            <label
+              ><input type="checkbox" value="LONG HEX KEYSET" /> LONG HEX
+              KEYSET</label
+            >
+            <label
+              ><input type="checkbox" value="LONG HEX KEYSET" /> LONG HEX
+              KEYSET</label
+            >
+            <label
+              ><input type="checkbox" value="LONG HEX KEYSET" /> LONG HEX
+              KEYSET</label
+            >
+            <label
+              ><input type="checkbox" value="LONG HEX KEYSET" /> LONG HEX
+              KEYSET</label
+            >
+            <label
+              ><input type="checkbox" value="LONG NOSE PLIERS" /> LONG NOSE
+              PLIERS</label
+            >
+            <label
+              ><input type="checkbox" value="LONG NOSE PLIERS" /> LONG NOSE
+              PLIERS</label
+            >
+            <label
+              ><input type="checkbox" value="LONG NOSE PLIERS" /> LONG NOSE
+              PLIERS</label
+            >
+            <label
+              ><input type="checkbox" value="LONG NOSE PLIERS" /> LONG NOSE
+              PLIERS</label
+            >
+            <label
+              ><input type="checkbox" value="LONG NOSE PLIERS" /> LONG NOSE
+              PLIERS</label
+            >
+            <label><input type="checkbox" value="LPG HOSE" /> LPG HOSE</label>
+            <label><input type="checkbox" value="LPG HOSE" /> LPG HOSE</label>
+            <label><input type="checkbox" value="LPG HOSE" /> LPG HOSE</label>
+            <label
+              ><input type="checkbox" value="LPG HOSE CONNECTOR" /> LPG HOSE
+              CONNECTOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG HOSE CONNECTOR" /> LPG HOSE
+              CONNECTOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG HOSE CONNECTOR" /> LPG HOSE
+              CONNECTOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG HOSE CONNECTOR" /> LPG HOSE
+              CONNECTOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG HOSE CONNECTOR" /> LPG HOSE
+              CONNECTOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG HOSE CONNECTOR" /> LPG HOSE
+              CONNECTOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG HOSE CONNECTOR" /> LPG HOSE
+              CONNECTOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG HOSE CONNECTOR" /> LPG HOSE
+              CONNECTOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG HOSE CONNECTOR" /> LPG HOSE
+              CONNECTOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG HOSE CONNECTOR" /> LPG HOSE
+              CONNECTOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG LOW PRESSURE REGULATOR" /> LPG
+              LOW PRESSURE REGULATOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG LOW PRESSURE REGULATOR" /> LPG
+              LOW PRESSURE REGULATOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG LOW PRESSURE REGULATOR" /> LPG
+              LOW PRESSURE REGULATOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG LOW PRESSURE REGULATOR" /> LPG
+              LOW PRESSURE REGULATOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG LOW PRESSURE REGULATOR" /> LPG
+              LOW PRESSURE REGULATOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG LOW PRESSURE REGULATOR" /> LPG
+              LOW PRESSURE REGULATOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG LOW PRESSURE REGULATOR" /> LPG
+              LOW PRESSURE REGULATOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG LOW PRESSURE REGULATOR" /> LPG
+              LOW PRESSURE REGULATOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG LOW PRESSURE REGULATOR" /> LPG
+              LOW PRESSURE REGULATOR</label
+            >
+            <label
+              ><input type="checkbox" value="LPG LOW PRESSURE REGULATOR" /> LPG
+              LOW PRESSURE REGULATOR</label
+            >
+            <label><input type="checkbox" value="LPG SCREW" /> LPG SCREW</label>
+            <label><input type="checkbox" value="LPG SCREW" /> LPG SCREW</label>
+            <label><input type="checkbox" value="LPG SCREW" /> LPG SCREW</label>
+            <label><input type="checkbox" value="LPG SCREW" /> LPG SCREW</label>
+            <label><input type="checkbox" value="LPG SCREW" /> LPG SCREW</label>
+            <label><input type="checkbox" value="LPG SCREW" /> LPG SCREW</label>
+            <label><input type="checkbox" value="LPG SCREW" /> LPG SCREW</label>
+            <label><input type="checkbox" value="LPG SCREW" /> LPG SCREW</label>
+            <label><input type="checkbox" value="LPG SCREW" /> LPG SCREW</label>
+            <label><input type="checkbox" value="LPG SCREW" /> LPG SCREW</label>
+          </div>
+          <div class="secondSection">
+            <label
+              ><input
+                type="checkbox"
+                value="MANUAL BASE UNIT WITH BUILT IN POWER SUPPLY"
+              />
+              MANUAL BASE UNIT WITH BUILT IN POWER SUPPLY</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MANUAL BASE UNIT WITH BUILT IN POWER SUPPLY"
+              />
+              MANUAL BASE UNIT WITH BUILT IN POWER SUPPLY</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MANUAL BASE UNIT WITH BUILT IN POWER SUPPLY"
+              />
+              MANUAL BASE UNIT WITH BUILT IN POWER SUPPLY</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MANUAL BASE UNIT WITH BUILT IN POWER SUPPLY"
+              />
+              MANUAL BASE UNIT WITH BUILT IN POWER SUPPLY</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MANUAL BASE UNIT WITH BUILT IN POWER SUPPLY"
+              />
+              MANUAL BASE UNIT WITH BUILT IN POWER SUPPLY</label
+            >
+            <label
+              ><input type="checkbox" value="MASS AND HANGER SET" /> MASS AND
+              HANGER SET</label
+            >
+            <label
+              ><input type="checkbox" value="MASS AND HANGER SET" /> MASS AND
+              HANGER SET</label
+            >
+            <label
+              ><input type="checkbox" value="MASS AND HANGER SET" /> MASS AND
+              HANGER SET</label
+            >
+            <label
+              ><input type="checkbox" value="MASS AND HANGER SET" /> MASS AND
+              HANGER SET</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MECHANICAL EQUIVALENT OF HEAT APPARATUS"
+              />
+              MECHANICAL EQUIVALENT OF HEAT APPARATUS</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MECHANICAL EQUIVALENT OF HEAT APPARATUS"
+              />
+              MECHANICAL EQUIVALENT OF HEAT APPARATUS</label
+            >
+            <label
+              ><input type="checkbox" value="MICROMETER" /> MICROMETER</label
+            >
+            <label
+              ><input type="checkbox" value="MICROMETER" /> MICROMETER</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MICROWAVE TRAY WITH 13 INTACT EQUIPMENT"
+              />
+              MICROWAVE TRAY WITH 13 INTACT EQUIPMENT</label
+            >
+            <label
+              ><input type="checkbox" value="MINI DRAWER" /> MINI DRAWER</label
+            >
+            <label
+              ><input type="checkbox" value="MINI DRAWER" /> MINI DRAWER</label
+            >
+            <label
+              ><input type="checkbox" value="MINI DRAWER" /> MINI DRAWER</label
+            >
+            <label
+              ><input type="checkbox" value="MINI DRAWER" /> MINI DRAWER</label
+            >
+            <label
+              ><input type="checkbox" value="MINI DRAWER" /> MINI DRAWER</label
+            >
+            <label
+              ><input type="checkbox" value="MINI DRAWER" /> MINI DRAWER</label
+            >
+            <label
+              ><input type="checkbox" value="MINI DRAWER" /> MINI DRAWER</label
+            >
+            <label
+              ><input type="checkbox" value="MINI DRAWER" /> MINI DRAWER</label
+            >
+            <label
+              ><input type="checkbox" value="MINI PLIER" /> MINI PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="MINI PLIER" /> MINI PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="MINI PLIER" /> MINI PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="MINI PLIER" /> MINI PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="MINI PLIER" /> MINI PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="MIXING AMPLIFIER" /> MIXING
+              AMPLIFIER</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MODULAR CIRCUITS ESSENTIAL PHYSICS"
+              />
+              MODULAR CIRCUITS ESSENTIAL PHYSICS</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MODULAR CIRCUITS ESSENTIAL PHYSICS"
+              />
+              MODULAR CIRCUITS ESSENTIAL PHYSICS</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MODULAR CIRCUITS ESSENTIAL PHYSICS"
+              />
+              MODULAR CIRCUITS ESSENTIAL PHYSICS</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MODULAR CIRCUITS ESSENTIAL PHYSICS"
+              />
+              MODULAR CIRCUITS ESSENTIAL PHYSICS</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MODULAR CIRCUITS ESSENTIAL PHYSICS"
+              />
+              MODULAR CIRCUITS ESSENTIAL PHYSICS</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="MODULAR CIRCUITS ESSENTIAL PHYSICS"
+              />
+              MODULAR CIRCUITS ESSENTIAL PHYSICS</label
+            >
+            <label><input type="checkbox" value="NAME" /> NAME</label>
+            <label
+              ><input
+                type="checkbox"
+                value="OPERATIONAL AMPLIFIERS APPLICATIONS BOARD"
+              />
+              OPERATIONAL AMPLIFIERS APPLICATIONS BOARD</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="OPERATIONAL AMPLIFIERS FUNDAMENTALS BOARD"
+              />
+              OPERATIONAL AMPLIFIERS FUNDAMENTALS BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="OVERFLOW CAN" /> OVERFLOW
+              CAN</label
+            >
+            <label
+              ><input type="checkbox" value="OVERFLOW CAN" /> OVERFLOW
+              CAN</label
+            >
+            <label
+              ><input type="checkbox" value="PALM SIZE MULTIMETER" /> PALM SIZE
+              MULTIMETER</label
+            >
+            <label
+              ><input type="checkbox" value="PALM SIZE MULTIMETER" /> PALM SIZE
+              MULTIMETER</label
+            >
+            <label
+              ><input type="checkbox" value="PALM SIZE MULTIMETER" /> PALM SIZE
+              MULTIMETER</label
+            >
+            <label
+              ><input type="checkbox" value="PALM SIZE MULTIMETER" /> PALM SIZE
+              MULTIMETER</label
+            >
+            <label
+              ><input type="checkbox" value="PALM SIZE MULTIMETER" /> PALM SIZE
+              MULTIMETER</label
+            >
+            <label
+              ><input type="checkbox" value="PALM SIZE MULTIMETER" /> PALM SIZE
+              MULTIMETER</label
+            >
+            <label
+              ><input type="checkbox" value="PHONE JACK EXTENDER CORD" /> PHONE
+              JACK EXTENDER CORD</label
+            >
+            <label
+              ><input type="checkbox" value="PHONE JACK EXTENDER CORD" /> PHONE
+              JACK EXTENDER CORD</label
+            >
+            <label
+              ><input type="checkbox" value="PIN DIODE MODULAT-06" /> PIN DIODE
+              MODULAT-06</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="POWER SUPPLY REGULATION CIRCUITS"
+              />
+              POWER SUPPLY REGULATION CIRCUITS</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="POWER SUPPLY REGULATION CIRCUITS BOARD"
+              />
+              POWER SUPPLY REGULATION CIRCUITS BOARD</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="POWER TRANSISTOR AND GTO THYRISTOR BOARD"
+              />
+              POWER TRANSISTOR AND GTO THYRISTOR BOARD</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="PROJECTILE LAUNCHER SMART GATE SYSTEM"
+              />
+              PROJECTILE LAUNCHER SMART GATE SYSTEM</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="PROJECTILE LAUNCHER SMART GATE SYSTEM"
+              />
+              PROJECTILE LAUNCHER SMART GATE SYSTEM</label
+            >
+            <label><input type="checkbox" value="PUMP" /> PUMP</label>
+            <label><input type="checkbox" value="PUMP" /> PUMP</label>
+            <label><input type="checkbox" value="PUMP" /> PUMP</label>
+            <label><input type="checkbox" value="PUMP" /> PUMP</label>
+            <label><input type="checkbox" value="PUMP" /> PUMP</label>
+            <label><input type="checkbox" value="PUMP" /> PUMP</label>
+            <label><input type="checkbox" value="PUMP" /> PUMP</label>
+            <label><input type="checkbox" value="PUMP" /> PUMP</label>
+            <label><input type="checkbox" value="PUMP" /> PUMP</label>
+            <label
+              ><input type="checkbox" value="QPSCK/OQPSK/DPSK BOARD" />
+              QPSCK/OQPSK/DPSK BOARD</label
+            >
+
+            <label
+              ><input type="checkbox" value="RESISTIVITY" /> RESISTIVITY</label
+            >
+            <label
+              ><input type="checkbox" value="RESISTIVITY" /> RESISTIVITY</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="RESISTOR 100K POTENTIOMETER 6PINS WITH BOX"
+              />
+              RESISTOR 100K POTENTIOMETER 6PINS WITH BOX</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="RESISTOR 100K POTENTIOMETER 6PINS WITH BOX"
+              />
+              RESISTOR 100K POTENTIOMETER 6PINS WITH BOX</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="RESISTOR 50K POTENTIOMETER 6PINS WITH BOX"
+              />
+              RESISTOR 50K POTENTIOMETER 6PINS WITH BOX</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="RESISTOR 50K POTENTIOMETER 6PINS WITH BOX"
+              />
+              RESISTOR 50K POTENTIOMETER 6PINS WITH BOX</label
+            >
+            <label><input type="checkbox" value="ROD-01" /> ROD-01</label>
+            <label><input type="checkbox" value="ROD-02" /> ROD-02</label>
+            <label
+              ><input type="checkbox" value="ROTATING PLATFORM" /> ROTATING
+              PLATFORM</label
+            >
+            <label
+              ><input type="checkbox" value="ROTATING PLATFORM" /> ROTATING
+              PLATFORM</label
+            >
+            <label
+              ><input type="checkbox" value="SEMI CONDUCTOR DEVICES BOARD" />
+              SEMI CONDUCTOR DEVICES BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="SEPARATION BOX" /> SEPARATION
+              BOX</label
+            >
+            <label
+              ><input type="checkbox" value="SEPARATION BOX" /> SEPARATION
+              BOX</label
+            >
+            <label
+              ><input type="checkbox" value="SEPARATION BOX" /> SEPARATION
+              BOX</label
+            >
+            <label
+              ><input type="checkbox" value="SEPARATION BOX" /> SEPARATION
+              BOX</label
+            >
+            <label
+              ><input type="checkbox" value="SEPARATION BOX" /> SEPARATION
+              BOX</label
+            >
+            <label
+              ><input type="checkbox" value="SMALL CAMERA" /> SMALL
+              CAMERA</label
+            >
+            <label
+              ><input type="checkbox" value="SMALL HOSE AND LIGHTER" /> SMALL
+              HOSE AND LIGHTER</label
+            >
+            <label
+              ><input type="checkbox" value="SMART GATE PULLEY SYSTEM" /> SMART
+              GATE PULLEY SYSTEM</label
+            >
+            <label
+              ><input type="checkbox" value="SMART GATE PULLEY SYSTEM" /> SMART
+              GATE PULLEY SYSTEM</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON" /> SOLDERING
+              IRON</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON" /> SOLDERING
+              IRON</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON" /> SOLDERING
+              IRON</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON" /> SOLDERING
+              IRON</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON" /> SOLDERING
+              IRON</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON" /> SOLDERING
+              IRON</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON" /> SOLDERING
+              IRON</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON" /> SOLDERING
+              IRON</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON" /> SOLDERING
+              IRON</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON" /> SOLDERING
+              IRON</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON HOLDER" /> SOLDERING
+              IRON HOLDER</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON HOLDER" /> SOLDERING
+              IRON HOLDER</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON HOLDER" /> SOLDERING
+              IRON HOLDER</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON HOLDER" /> SOLDERING
+              IRON HOLDER</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON HOLDER" /> SOLDERING
+              IRON HOLDER</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON HOLDER" /> SOLDERING
+              IRON HOLDER</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON HOLDER" /> SOLDERING
+              IRON HOLDER</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON HOLDER" /> SOLDERING
+              IRON HOLDER</label
+            >
+            <label
+              ><input type="checkbox" value="SOLDERING IRON HOLDER" /> SOLDERING
+              IRON HOLDER</label
+            >
+            <label
+              ><input type="checkbox" value="SPEAKER-01" /> SPEAKER-01</label
+            >
+            <label
+              ><input type="checkbox" value="SPEAKER-02" /> SPEAKER-02</label
+            >
+            <label
+              ><input type="checkbox" value="SPEAKER-03" /> SPEAKER-03</label
+            >
+            <label
+              ><input type="checkbox" value="SPEAKER-04" /> SPEAKER-04</label
+            >
+            <label
+              ><input type="checkbox" value="SPIKE PRIME EXPANSION SET" /> SPIKE
+              PRIME EXPANSION SET</label
+            >
+            <label
+              ><input type="checkbox" value="SPIKE PRIME EXPANSION SET" /> SPIKE
+              PRIME EXPANSION SET</label
+            >
+            <label
+              ><input type="checkbox" value="SPIKE PRIME EXPANSION SET" /> SPIKE
+              PRIME EXPANSION SET</label
+            >
+            <label
+              ><input type="checkbox" value="SPIKE PRIME EXPANSION SET" /> SPIKE
+              PRIME EXPANSION SET</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="STANDARD SMART CART METAL 1.2m SYSTEM"
+              />
+              STANDARD SMART CART METAL 1.2m SYSTEM</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="STANDARD SMART CART METAL 1.2m SYSTEM"
+              />
+              STANDARD SMART CART METAL 1.2m SYSTEM</label
+            >
+            <label
+              ><input type="checkbox" value="STARTING KIT" /> STARTING
+              KIT</label
+            >
+            <label
+              ><input type="checkbox" value="STARTING KIT" /> STARTING
+              KIT</label
+            >
+            <label
+              ><input type="checkbox" value="STARTING KIT" /> STARTING
+              KIT</label
+            >
+            <label
+              ><input type="checkbox" value="STARTING KIT" /> STARTING
+              KIT</label
+            >
+            <label
+              ><input type="checkbox" value="STARTING KIT" /> STARTING
+              KIT</label
+            >
+            <label
+              ><input type="checkbox" value="STARTING KIT" /> STARTING
+              KIT</label
+            >
+            <label
+              ><input type="checkbox" value="STEAM GENERATOR" /> STEAM
+              GENERATOR</label
+            >
+            <label
+              ><input type="checkbox" value="STEAM GENERATOR" /> STEAM
+              GENERATOR</label
+            >
+            <label
+              ><input type="checkbox" value="STORAGE PIN+TEE06" /> STORAGE
+              PIN+TEE06</label
+            >
+            <label
+              ><input type="checkbox" value="STRING VIBRATOR" /> STRING
+              VIBRATOR</label
+            >
+            <label
+              ><input type="checkbox" value="STRING VIBRATOR" /> STRING
+              VIBRATOR</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="STUDENT POWER SUPPLY (18 V DC 3A)"
+              />
+              STUDENT POWER SUPPLY (18 V DC 3A)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="STUDENT POWER SUPPLY (18 V DC 3A)"
+              />
+              STUDENT POWER SUPPLY (18 V DC 3A)</label
+            >
+            <label
+              ><input type="checkbox" value="SUPER PULLEY FORCE TABLE" /> SUPER
+              PULLEY FORCE TABLE</label
+            >
+            <label
+              ><input type="checkbox" value="SUPER PULLEY FORCE TABLE" /> SUPER
+              PULLEY FORCE TABLE</label
+            >
+            <label
+              ><input type="checkbox" value="TARGET BOARD BLACK" /> TARGET BOARD
+              BLACK</label
+            >
+            <label
+              ><input type="checkbox" value="TARGET BOARD WHITE" /> TARGET BOARD
+              WHITE</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="THYRISTORS AND POWER CONTROL CIRCUITS BOARD"
+              />
+              THYRISTORS AND POWER CONTROL CIRCUITS BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="TIME FLIGHT ACCESSOR" /> TIME
+              FLIGHT ACCESSOR</label
+            >
+            <label
+              ><input type="checkbox" value="TIME FLIGHT ACCESSOR" /> TIME
+              FLIGHT ACCESSOR</label
+            >
+            <label
+              ><input type="checkbox" value="TOOL BOX 13" /> TOOL BOX 13</label
+            >
+            <label
+              ><input type="checkbox" value="TOOL BOX 13" /> TOOL BOX 13</label
+            >
+            <label
+              ><input type="checkbox" value="TOOL BOX 13" /> TOOL BOX 13</label
+            >
+            <label
+              ><input type="checkbox" value="TOOL BOX 13" /> TOOL BOX 13</label
+            >
+            <label
+              ><input type="checkbox" value="TOOL BOX 13" /> TOOL BOX 13</label
+            >
+            <label
+              ><input type="checkbox" value="TOOL BOX 13" /> TOOL BOX 13</label
+            >
+            <label
+              ><input type="checkbox" value="TOOLS PLIERS" /> TOOLS
+              PLIERS</label
+            >
+            <label
+              ><input type="checkbox" value="TOOLS PLIERS" /> TOOLS
+              PLIERS</label
+            >
+            <label
+              ><input type="checkbox" value="TOOLS PLIERS" /> TOOLS
+              PLIERS</label
+            >
+            <label
+              ><input type="checkbox" value="TOOLS PLIERS" /> TOOLS
+              PLIERS</label
+            >
+            <label
+              ><input type="checkbox" value="TOOLS PLIERS" /> TOOLS
+              PLIERS</label
+            >
+            <label
+              ><input type="checkbox" value="TRANSDUCER FUNDAMENTALS BOARD" />
+              TRANSDUCER FUNDAMENTALS BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="TRANSFORMER" /> TRANSFORMER</label
+            >
+            <label
+              ><input type="checkbox" value="TRANSFORMER" /> TRANSFORMER</label
+            >
+            <label
+              ><input type="checkbox" value="TRANSFORMER" /> TRANSFORMER</label
+            >
+            <label
+              ><input type="checkbox" value="TRANSFORMER" /> TRANSFORMER</label
+            >
+            <label
+              ><input type="checkbox" value="TRANSFORMER" /> TRANSFORMER</label
+            >
+            <label
+              ><input type="checkbox" value="TRANSFORMER" /> TRANSFORMER</label
+            >
+            <label
+              ><input type="checkbox" value="TRANSFORMER" /> TRANSFORMER</label
+            >
+            <label
+              ><input type="checkbox" value="TRANSFORMER" /> TRANSFORMER</label
+            >
+            <label
+              ><input type="checkbox" value="TRANSFORMER" /> TRANSFORMER</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="TRANSISTOR AMPLIFIER CIRCUITS BOARD"
+              />
+              TRANSISTOR AMPLIFIER CIRCUITS BOARD</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="TRANSISTOR FEEDBACK CIRCUITS BOARD"
+              />
+              TRANSISTOR FEEDBACK CIRCUITS BOARD</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="TRANSISTOR POWER AMPLIFIERS BOARD"
+              />
+              TRANSISTOR POWER AMPLIFIERS BOARD</label
+            >
+            <label
+              ><input type="checkbox" value="TRIPLE BEAM BALANCE (WITH TARE)" />
+              TRIPLE BEAM BALANCE (WITH TARE)</label
+            >
+            <label
+              ><input type="checkbox" value="TRIPLE BEAM BALANCE (WITH TARE)" />
+              TRIPLE BEAM BALANCE (WITH TARE)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="VAN DE GRAAFF GENERATOR HIGH VOLTAGE"
+              />
+              VAN DE GRAAFF GENERATOR HIGH VOLTAGE</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="VAN DE GRAAFF GENERATOR HIGH VOLTAGE"
+              />
+              VAN DE GRAAFF GENERATOR HIGH VOLTAGE</label
+            >
+            <label
+              ><input type="checkbox" value="VIDEO AMPLIFIER-01" /> VIDEO
+              AMPLIFIER-01</label
+            >
+            <label
+              ><input type="checkbox" value="WIRE STRIPPER PLIER" /> WIRE
+              STRIPPER PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="WIRE STRIPPER PLIER" /> WIRE
+              STRIPPER PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="WIRE STRIPPER PLIER" /> WIRE
+              STRIPPER PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="WIRE STRIPPER PLIER" /> WIRE
+              STRIPPER PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="WIRE STRIPPER PLIER" /> WIRE
+              STRIPPER PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="WIRE STRIPPER PLIER" /> WIRE
+              STRIPPER PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="WIRE STRIPPER PLIER" /> WIRE
+              STRIPPER PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="WIRE STRIPPER PLIER" /> WIRE
+              STRIPPER PLIER</label
+            >
+            <label
+              ><input type="checkbox" value="WIRE STRIPPER PLIER" /> WIRE
+              STRIPPER PLIER</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="WIRELESS C02 SENSOR (CARBON DIOXIDE)"
+              />
+              WIRELESS C02 SENSOR (CARBON DIOXIDE)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="WIRELESS C02 SENSOR (CARBON DIOXIDE)"
+              />
+              WIRELESS C02 SENSOR (CARBON DIOXIDE)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="WIRELESS CENTRIPITAL FORCE ACCESSORY"
+              />
+              WIRELESS CENTRIPITAL FORCE ACCESSORY</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="WIRELESS CENTRIPITAL FORCE ACCESSORY"
+              />
+              WIRELESS CENTRIPITAL FORCE ACCESSORY</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="WIRELESS COLORIMETER AND TURBIDITY SENSOR"
+              />
+              WIRELESS COLORIMETER AND TURBIDITY SENSOR</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="WIRELESS COLORIMETER AND TURBIDITY SENSOR"
+              />
+              WIRELESS COLORIMETER AND TURBIDITY SENSOR</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS CONDUCTIVITY SENSOR" />
+              WIRELESS CONDUCTIVITY SENSOR</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS CONDUCTIVITY SENSOR" />
+              WIRELESS CONDUCTIVITY SENSOR</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS FORCE ACCELERATION" />
+              WIRELESS FORCE ACCELERATION</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS FORCE ACCELERATION" />
+              WIRELESS FORCE ACCELERATION</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="WIRELESS OPTICAL DISSOLVED OXYGEN SENSOR"
+              />
+              WIRELESS OPTICAL DISSOLVED OXYGEN SENSOR</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                value="WIRELESS OPTICAL DISSOLVED OXYGEN SENSOR"
+              />
+              WIRELESS OPTICAL DISSOLVED OXYGEN SENSOR</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS PH" /> WIRELESS PH</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS PH" /> WIRELESS PH</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS PRESSURE SENSOR" />
+              WIRELESS PRESSURE SENSOR</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS PRESSURE SENSOR" />
+              WIRELESS PRESSURE SENSOR</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS TEMPERATURE SENSOR" />
+              WIRELESS TEMPERATURE SENSOR</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS TEMPERATURE SENSOR" />
+              WIRELESS TEMPERATURE SENSOR</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS TEMPERATURE SENSOR" />
+              WIRELESS TEMPERATURE SENSOR</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS TEMPERATURE SENSOR" />
+              WIRELESS TEMPERATURE SENSOR</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS TEMPERATURE SENSOR" />
+              WIRELESS TEMPERATURE SENSOR</label
+            >
+            <label
+              ><input type="checkbox" value="WIRELESS TEMPERATURE SENSOR" />
+              WIRELESS TEMPERATURE SENSOR</label
+            >
+          </div>
+        </form>
+      </div>
+      <div class="secondHomepage">
+        
+        <div class="titleHead">
+          <p>ENGINEERING LABORATORY</p>
+          <p>BORROWING PROCEDURE</p>
+        </div>
+
+      
+        <div class="rulesContainer">
+         
+          <div class="rules">
+            <p>
+              <span>1.</span>THE PROFESSOR MUST INSTRUCT THE LEADERS OF THE
+              EXPERIMENT TO SECURE AND SUBMIT BORROWER'S SLIP FROM THE
+              LABORATORY DISPENSING UNIT AT LEAST
+              <font color="red">4 DAYS</font> BEFORE THE SCHEDULED LABORATORY
+              CLASS.
+            </p>
+            <p>
+              <span>2.</span>EACH GROUP MUST PERFORM THE EXPERIMENT ON THE TABLE
+              DESIGNATED BY THE PROFESSOR OF THE CLASS.
+            </p>
+            <p>
+              <span>3.</span>SHARING OF APPARATUS/EQUIPMENT/MATERIALS IS NOT
+              ALLOWED.
+            </p>
+            <p>
+              <span>4.</span>AFTER THE EXPERIMENT, THE LEADER MUST RETURN THE
+              APPARATUS /EQUIPMENT AND MUST ENSURE TO CLEAN THE TABLE BEFORE
+              LEAVING.
+            </p>
+            <p>
+              <span>5.</span>ALL MEMBERS OF THE GROUP SHALL BE HELD ACCOUNTABLE
+              FOR ANY DAMAGE OR LOSS OF THE BORROWED APPARATUS/EQUIPMENT DUE
+              NEGLIGENCE OR CARELESSNESS.
+            </p>
+            <p>
+              <span>6.</span>AFTER THE EXPERIMENT, ALL BORROWED
+              APPARATUS/EQUIPMENT SHOULD BE RETURNED
+              <font color="red">10 MINUTES</font> BEFORE THE END OF THE CLASS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

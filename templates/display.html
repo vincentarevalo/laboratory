@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted Items</title>
+</head>
+<body>
+<h1>Submitted Items</h1>
+<table border="1">
+    <tr>
+        <th>QTY</th>
+        <th>SERIAL NUMBER</th>
+        <th>EMPTY COLUMN</th>
+        <th>REMARKS</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+        <td>{{ item.qty }}</td>
+        <td>{{ item.serial }}</td>
+        <td>{{ item.empty }}</td>
+        <td>{{ item.remarks }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
